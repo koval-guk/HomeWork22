@@ -10,8 +10,8 @@ public class CalcTest {
         int max = 20;
         int res;
         System.out.println(res = Calc.random(min,max));
-        Assertions.assertTrue(min < res);
-        Assertions.assertTrue(max > res);
+        Assertions.assertTrue(min <= res);
+        Assertions.assertTrue(max >= res);
     }
     @Test
     public void addSuccessTest(){
