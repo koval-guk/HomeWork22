@@ -16,6 +16,7 @@ jobs:
       - name: Compile project
         run: mvn --batch-mode compile
   test:
+    needs: compile
     runs-on: ubuntu-latest
     steps:
       - name: Check out
