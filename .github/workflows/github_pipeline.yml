@@ -15,3 +15,15 @@ jobs:
          distribution: 'temurin'
       - name: Compile project
         run: mvn --batch-mode compile
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Test project
+        run: mvn --batch-mode test
