@@ -1,7 +1,6 @@
 name: GitHub Pipeline for HW22
 
 on: [push]
-
 jobs:
   compile:
     runs-on: ubuntu-latest
