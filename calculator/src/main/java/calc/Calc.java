@@ -3,7 +3,7 @@ package calc;
 public class Calc {
 
     public static int random(int from, int to) {
-        return (int) ((Math.random() * (to - from)) + to);
+        return (int) ((Math.random() * (to - from)) + from);
     }
 
     public static double add(double x, double y) {
@@ -22,7 +22,7 @@ public class Calc {
         if (y != 0) {
             return x / y;
         } else {
-            throw new ArithmeticException();
+            throw new ArithmeticException("/ by zero");
         }
     }
 }
